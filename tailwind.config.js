@@ -8,7 +8,12 @@ export default {
     extend: {
       fontFamily:{
         lato: "'Lato', satisfies", 
-      }
+      },
+      colors: {
+        primary: "#ff8901",
+        hoverPrimary: "#ff8901",
+        secondary: "#fb923c",
+      },
     },
   },
   plugins: [
