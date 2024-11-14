@@ -14,9 +14,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <FlowbiteProvider>
   <HelmetProvider context={helmetContext}>
     <AuthProvider>
-      <div className="bg-gray-100 min-h-screen">
       <RouterProvider router={router} />
-      </div>
       <Toaster />
     </AuthProvider>
   </HelmetProvider>

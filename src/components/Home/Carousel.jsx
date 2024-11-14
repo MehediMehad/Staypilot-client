@@ -3,9 +3,9 @@ import { Carousel } from 'flowbite';
 // const carousel = new Carousel(carouselElement, items, options, instanceOptions);
 const Carousel2 = () => {
   return (
-    <div id="default-carousel" className="relative w-full" data-carousel="slide">
+    <div id="default-carousel" className="relative w-full " data-carousel="slide">
       {/* Carousel wrapper */}
-      <div className="relative h-56 overflow-hidden rounded-lg md:h-[70vh]">
+      <div className="relative h-80 overflow-hidden rounded-sm md:h-[70vh]">
         {/* Item 1 */}
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
           <div className="absolute inset-0 bg-black opacity-35 z-10"></div> {/* Overlay */}
@@ -122,7 +122,7 @@ const Carousel2 = () => {
         className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         data-carousel-prev
       >
-        <span className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-gray-600/40 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+        <span className="inline-flex items-center justify-center w-10 h-10 md:w-14 md:h-14 rounded-full bg-gray-600/40 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
           <svg
             className="w-5 h-5 text-gray-300 dark:text-gray-800 rtl:rotate-180"
             aria-hidden="true"
@@ -146,7 +146,7 @@ const Carousel2 = () => {
         className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         data-carousel-next
       >
-        <span className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-gray-600/40 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+        <span className="inline-flex items-center justify-center w-10 h-10 md:w-14 md:h-14 rounded-full bg-gray-600/40 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
           <svg
             className="w-5 h-5 text-gray-300 dark:text-gray-800 rtl:rotate-180"
             aria-hidden="true"
