@@ -1,12 +1,12 @@
 import Carousel2 from '../../components/Home/Carousel';
-import ExplorePlaces from '../../components/Home/Rooms';
+import RoomSection from '../../components/Home/RoomSection';
 
 const Home = () => {
     return (
         <div className=''>
             <div className="container -mt-4">
                 <Carousel2 />
-                <ExplorePlaces/>
+                <RoomSection/>
             </div>
         </div>
     );
