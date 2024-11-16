@@ -8,19 +8,19 @@ import { router } from './routes/Routes'
 import { Toaster } from 'react-hot-toast'
 import { HelmetProvider } from 'react-helmet-async'
 
-// TODO : 
+// TODO : Props, 
 const queryClient = new QueryClient()
 const helmetContext = {};
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <FlowbiteProvider>
-    <HelmetProvider context={helmetContext}>
-      <QueryClientProvider client={queryClient}>
+  <QueryClientProvider client={queryClient}>
+    <FlowbiteProvider>
+      <HelmetProvider context={helmetContext}>
         <AuthProvider>
           <RouterProvider router={router} />
           <Toaster />
         </AuthProvider>
-      </QueryClientProvider>
-    </HelmetProvider>
-  </FlowbiteProvider>
+      </HelmetProvider>
+    </FlowbiteProvider>
+  </QueryClientProvider>
 )

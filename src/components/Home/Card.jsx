@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
+import PropTypes from 'prop-types'
 
 const Card = ({room}) => {
     return (
-        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col">
+        <Link to={`/room/${room?._id}`}  className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col">
             <img
                 src={room?.image || ""}
                 alt={room?.name || "Room Image"}
@@ -17,8 +19,10 @@ const Card = ({room}) => {
                     <span className="text-gray-500 text-sm">(per night)</span>
                 </div>
             </div>
-        </div>
+        </Link>
     );
 };
-
+Card.propTypes = {
+    room: PropTypes.object,
+  }
 export default Card;
