@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import RoomReservation from '../../components/RoomDetails/RoomReservation';
 import Heading from '../../components/Shared/Heading';
 import { useQuery } from '@tanstack/react-query';
 import { useParams } from 'react-router-dom';
@@ -72,7 +73,7 @@ const RoomDetails = () => {
 
             {/* Room Reservation */}
             <div className="md:col-span-3 order-first md:order-last mb-10">
-                {/* TODO */}
+              <RoomReservation room={room} />
             </div>
           </div>
         </div>
